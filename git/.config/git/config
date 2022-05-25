@@ -1,0 +1,7 @@
+[user]
+	name = Jorge Alberto Díaz
+	email = Jorge.Alberto.Diaz@hotmail.com.ar
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
