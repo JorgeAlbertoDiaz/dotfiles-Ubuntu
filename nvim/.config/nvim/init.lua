@@ -11,5 +11,7 @@ require 'jorge.plugins'
 require 'jorge.plugins.telescope-setup'
 require 'jorge.plugins.nvim-web-devicons-setup'
 require 'jorge.plugins.nvim-tree-setup'
+require 'jorge.plugins.colorscheme-ayu-setup'
+require 'jorge.plugins.lualine-setup'
 
 require 'jorge.mappings'
