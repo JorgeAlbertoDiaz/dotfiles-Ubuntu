@@ -55,7 +55,13 @@ return require('packer').startup(function(use)
 	'williamboman/nvim-lsp-installer'
 	)
 	--]]
-	use("kyazdani42/nvim-web-devicons")
+	use {
+		'kyazdani42/nvim-tree.lua',
+		requires = {
+			'kyazdani42/nvim-web-devicons', -- optional, for file icon
+		},
+		tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	}
 
 	-- Completition
 	use("hrsh7th/nvim-cmp")

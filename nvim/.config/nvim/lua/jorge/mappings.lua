@@ -1,10 +1,10 @@
 -- Functional wrapper for mapping custom keybindings
 function map(mode, lhs, rhs, opts)
-    local options = { noremap = true }
-    if opts then
-        options = vim.tbl_extend("force", options, opts)
-    end
-    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+	local options = { noremap = true }
+	if opts then
+		options = vim.tbl_extend("force", options, opts)
+	end
+	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
 -- Telescope
@@ -27,4 +27,7 @@ map("n", "<Leader><space>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
 map("n", "<Leader><space>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>")
 map("n", "<Leader><space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
+
+-- Nvim Tree
+map("n", "<Leader>tt", ":NvimTreeToggle<CR>")
 
