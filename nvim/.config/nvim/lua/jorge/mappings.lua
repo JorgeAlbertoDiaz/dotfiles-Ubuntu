@@ -8,7 +8,7 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- Telescope
-map("n", "<Leader>ff", ":Telescope find_files<CR>")
+map("n", "<Leader>e", ":Telescope find_files<CR>")
 map("n", "<Leader>fm", ":Telescope media_files<CR>")
 map("n", "<Leader>fg", ":Telescope live_grep<CR>")
 map("n", "<Leader>fb", ":Telescope buffers<CR>")
@@ -29,5 +29,5 @@ map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>")
 map("n", "<Leader><space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
 
 -- Nvim Tree
-map("n", "<Leader>tt", ":NvimTreeToggle<CR>")
+map("n", "<Leader>t", ":NvimTreeToggle<CR>")
 

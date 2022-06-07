@@ -5,7 +5,7 @@ if require 'jorge.first_load' () then
 end
 
 require 'jorge.globals'
-vim.g.mapleader = " "
+vim.g.mapleader = ","
 
 require 'jorge.plugins'
 require 'jorge.plugins.telescope-setup'
