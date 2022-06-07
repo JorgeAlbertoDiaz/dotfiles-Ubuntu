@@ -34,7 +34,9 @@ return require('packer').startup(function(use)
 			"neovim/nvim-lspconfig",
 			config = function()
 				require("nvim-lsp-installer").setup({
-					automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+					automatic_installation = true, --[[ automatically detect
+                    which servers to install (based on which servers are set up
+                    via lspconfig) --]]
 					ui = {
 						icons = {
 							server_installed = "✓",
@@ -49,12 +51,6 @@ return require('packer').startup(function(use)
 		}
 	}
 
-	--[[
-	use(
-	'neovim/nvim-lspconfig',
-	'williamboman/nvim-lsp-installer'
-	)
-	--]]
 	use {
 		'kyazdani42/nvim-tree.lua',
 		requires = {
@@ -82,6 +78,16 @@ return require('packer').startup(function(use)
 
 	use('tpope/vim-surround')
 
-	-- Completition
+	-- Scheme's Colors
 	use('Shatur/neovim-ayu')
+
+    -- PlantUML
+    use {
+            'weirongxu/plantuml-previewer',
+            requires = {
+                    'tyru/open-browser',
+                    'aklt/plantuml-syntax',
+            }
+    }
+
 end)
