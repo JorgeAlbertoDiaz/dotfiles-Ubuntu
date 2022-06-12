@@ -10,16 +10,24 @@ ENDCOLOR="\e[0m"
 
 packageNames=(
 "curl"
+"fd-find"
+"ffmpegthumbnailer"
 "figlet"
 "fzf"
 "git"
+"libmysqlclient-dev"
+"libxext-dev"
 "lua5.2"
 "mysql-server-8.0"
 "neofetch"
 "neovim"
+"poppler-utils"
+"ripgrep"
+"ripgrep"
 "stow"
 "tmux"
 "vim"
+"xclip"
 )
 
 
@@ -47,7 +55,7 @@ if [[ $VAR ]]
 		echo -e "${GREEN}Se instalaran los siguientes paquetes:\n${VAR}\n${ENDCOLOR}"
 		INSTALL=true
 	else
-		echo -e "${GREEN}esta todo instalado${ENDCOLOR}"
+		echo -e "${GREEN}Tienes todo instalado${ENDCOLOR}"
 fi
 
 if [[ $INSTALL ]]
