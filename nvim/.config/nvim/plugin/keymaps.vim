@@ -19,8 +19,8 @@ nnoremap <silent> <Leader>w+ :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap <silent> <Leader>w- :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
 " Buffers
-map <C-d>  :bnext<CR>  
-map <C-a>  :bprev<CR>
+map <leader>z :bnext<CR>  
+map <leader>c  :bprev<CR>
 imap <C-D> <Esc>:bnext<CR>a 
 imap <C-A> <Esc>:bprev<CR>
-nnoremap <silent> <C-q> :lclose<bar>b#<bar>bdelete #<CR>
+nnoremap <leader> x :lclose<bar>b#<bar>bdelete #<CR>

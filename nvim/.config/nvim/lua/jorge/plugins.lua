@@ -75,19 +75,15 @@ return require('packer').startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
-
+    -- Best Features
+    use("tpope/vim-commentary")
 	use('tpope/vim-surround')
+	use('tpope/vim-abolish')
 
 	-- Scheme's Colors
 	use('Shatur/neovim-ayu')
 
     -- PlantUML
-    use {
-            'weirongxu/plantuml-previewer',
-            requires = {
-                    'tyru/open-browser',
-                    'aklt/plantuml-syntax',
-            }
-    }
+
 
 end)
