@@ -8,7 +8,8 @@ read "response"
 
 if [ "$response" = "s" ] || [ "$response" = "S" ] || [ "$response" = "y" ] || [ "$response" = "Y" ]
 then
-	source ./install/minimal-packages.sh
+	source ./install/update_and_upgrade.sh
+	source ./install/install-packages.sh
 else
 	printf "${RED}Decidiste cancelar la instalación de los paquetes de uso básicos...${DEFAULT}\n\n"
 fi

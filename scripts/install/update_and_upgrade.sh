@@ -13,6 +13,4 @@ sudo apt upgrade -y
 
 printf "${GREEN}Ahora se procederá con la instalación de los paquetes básicos.${DEFAULT}\n\n"
 printf "Ejecuta apt upgrade...\n\n"
-source ./install/install-packages.sh
-
 
