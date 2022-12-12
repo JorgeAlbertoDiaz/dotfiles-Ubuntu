@@ -37,5 +37,3 @@ BG_BLUE='\033[104m'
 BG_MAGENTA='\033[105m'
 BG_CYAN='\033[106m'
 BG_WHITE='\033[107m'
-
-printf "${BG_DARK_YELLOW}Este es un texto en ${DARK_MAGENTA}ROJO${DEFAULT} con un fondo blanco${BG_DEFAULT}...\n"

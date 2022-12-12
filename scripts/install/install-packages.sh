@@ -1,33 +1,26 @@
 #!/bin/bash
 
-clear
-
-RED="\e[31m"
-GREEN="\e[32m"
-YELLOW="\e[33m"
-BLUE="\e[34m"
-ENDCOLOR="\e[0m"
-
 packageNames=(
-"curl"
-"fd-find"
-"ffmpegthumbnailer"
-"figlet"
-"fzf"
-"git"
-"libmysqlclient-dev"
-"libxext-dev"
-"lua5.2"
-"mysql-server-8.0"
-"neofetch"
-"neovim"
-"poppler-utils"
-"ripgrep"
-"ripgrep"
-"stow"
-"tmux"
-"vim"
-"xclip"
+	"curl"
+	"fd-find"
+	"ffmpegthumbnailer"
+	"figlet"
+	"fzf"
+	"git"
+	"libmysqlclient-dev"
+	"libxext-dev"
+	"lua5.2"
+	"mysql-server-8.0"
+	"neofetch"
+	"screenfetch"
+	"neovim"
+	"poppler-utils"
+	"ripgrep"
+	"stow"
+	"tmux"
+	"vim"
+	"wget"
+	"xclip"
 )
 
 
@@ -38,12 +31,12 @@ for PACKAGE in ${packageNames[@]}; do
 	dpkg -s $PACKAGE &> /dev/null
 
 	if [ $? -ne 0 ]
-		then
-			echo -e "- ${PACKAGE} : ${RED}no instalado${ENDCOLOR}"
-			VAR+="\n- ${PACKAGE}"
-			PACKAGES+="${PACKAGE} "
-		else
-			echo -e "+ ${PACKAGE} : ${GREEN}instalado${ENDCOLOR}"
+	then
+		echo -e "- ${PACKAGE} : ${RED}no instalado${DEFAULT}"
+		VAR+="\n- ${PACKAGE}"
+		PACKAGES+="${PACKAGE} "
+	else
+		echo -e "+ ${PACKAGE} : ${GREEN}instalado${DEFAULT}"
 	fi
 done
 echo -e "\n"
@@ -51,16 +44,16 @@ echo -e "\n"
 
 INSTALL=""
 if [[ $VAR ]]
-	then
-		echo -e "${GREEN}Se instalaran los siguientes paquetes:\n${VAR}\n${ENDCOLOR}"
-		INSTALL=true
-	else
-		echo -e "${GREEN}Tienes todo instalado${ENDCOLOR}"
+then
+	echo -e "${CYAN}Se instalaran los siguientes paquetes:\n${GREEN}${VAR}\n${DEFAULT}"
+	INSTALL=true
+else
+	echo -e "${GREEN}Ya tienes estos paquetes instalados.${DEFAULT}"
 fi
 
 if [[ $INSTALL ]]
-	then
-		sudo apt update && sudo apt install -y $PACKAGES
+then
+	sudo apt install -y $PACKAGES
 fi
 
-echo -e "${GREEN}Script finalizado${ENDCOLOR}"
+printf "\n\n${GREEN}Script finalizado${DEFAULT}\n\n"
