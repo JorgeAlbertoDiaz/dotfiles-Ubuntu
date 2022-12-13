@@ -12,6 +12,7 @@ then
 	source ./install/basic-packages.sh
 	source ./install/google-chrome.sh
 	source ./install/visual-studio-code.sh
+	source ./install/docker-engine.sh
 else
 	printf "${RED}Decidiste cancelar la instalación de los paquetes de uso básicos...${DEFAULT}\n\n"
 fi

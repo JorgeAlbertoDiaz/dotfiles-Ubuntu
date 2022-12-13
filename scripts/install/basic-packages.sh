@@ -2,14 +2,17 @@
 
 packageNames=(
 	"apt-transport-https "
+	"ca-certificates"
 	"curl"
 	"fd-find"
 	"ffmpegthumbnailer"
 	"figlet"
 	"fzf"
 	"git"
+	"gnupg"
 	"libmysqlclient-dev"
 	"libxext-dev"
+	"lsb-release"
 	"lua5.2"
 	"mysql-server-8.0"
 	"neofetch"
