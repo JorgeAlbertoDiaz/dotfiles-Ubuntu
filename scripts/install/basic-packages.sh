@@ -56,4 +56,3 @@ then
 	sudo apt install -y $PACKAGES
 fi
 
-printf "\n\n${GREEN}Script finalizado${DEFAULT}\n\n"
