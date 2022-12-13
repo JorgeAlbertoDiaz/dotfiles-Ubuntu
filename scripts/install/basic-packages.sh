@@ -1,6 +1,7 @@
 #!/bin/bash
 
 packageNames=(
+	"apt-transport-https "
 	"curl"
 	"fd-find"
 	"ffmpegthumbnailer"
@@ -12,10 +13,11 @@ packageNames=(
 	"lua5.2"
 	"mysql-server-8.0"
 	"neofetch"
-	"screenfetch"
 	"neovim"
 	"poppler-utils"
 	"ripgrep"
+	"screenfetch"
+	"software-properties-common"
 	"stow"
 	"tmux"
 	"vim"
