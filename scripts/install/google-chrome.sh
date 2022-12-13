@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "Verificar si Google Chrome esta instalado\n\n"
+printf "Verificar si Google Chrome esta instalado\n"
 
 PACKAGE="google-chrome-stable"
 
