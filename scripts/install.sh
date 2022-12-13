@@ -10,6 +10,7 @@ if [ "$response" = "s" ] || [ "$response" = "S" ] || [ "$response" = "y" ] || [ 
 then
 	source ./install/update_and_upgrade.sh
 	source ./install/install-packages.sh
+	source ./install/google-chrome.sh
 else
 	printf "${RED}Decidiste cancelar la instalación de los paquetes de uso básicos...${DEFAULT}\n\n"
 fi
