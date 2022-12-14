@@ -10,6 +10,7 @@ if [ "$response" = "s" ] || [ "$response" = "S" ] || [ "$response" = "y" ] || [ 
 then
 	source ./install/update_and_upgrade.sh
 	source ./install/basic-packages.sh
+	source ./install/snap-packages.sh
 	source ./install/google-chrome.sh
 	source ./install/visual-studio-code.sh
 	source ./install/docker-engine.sh
