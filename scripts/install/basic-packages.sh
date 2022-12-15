@@ -19,7 +19,7 @@ packageNames=(
 	"mysql-server-8.0"
 	"neofetch"
 	"neovim"
-	"node"
+	"nodejs"
 	"npm"
 	"php8.1"
 	"php8.1-cli"
