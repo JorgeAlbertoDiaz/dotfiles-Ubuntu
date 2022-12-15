@@ -11,6 +11,7 @@ then
 	source ./src/update_and_upgrade.sh
 	source ./src/basic-packages.sh
 	source ./src/snap-packages.sh
+	source ./src/neovim.sh
 	source ./src/google-chrome.sh
 	source ./src/visual-studio-code.sh
 	source ./src/docker-engine.sh
