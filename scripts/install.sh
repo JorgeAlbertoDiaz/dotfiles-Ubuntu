@@ -8,12 +8,12 @@ read "response"
 
 if [ "$response" = "s" ] || [ "$response" = "S" ] || [ "$response" = "y" ] || [ "$response" = "Y" ]
 then
-	source ./install/update_and_upgrade.sh
-	source ./install/basic-packages.sh
-	source ./install/snap-packages.sh
-	source ./install/google-chrome.sh
-	source ./install/visual-studio-code.sh
-	source ./install/docker-engine.sh
+	source ./src/update_and_upgrade.sh
+	source ./src/basic-packages.sh
+	source ./src/snap-packages.sh
+	source ./src/google-chrome.sh
+	source ./src/visual-studio-code.sh
+	source ./src/docker-engine.sh
 else
 	printf "${RED}Decidiste cancelar la instalación de los paquetes de uso básicos...${DEFAULT}\n\n"
 fi

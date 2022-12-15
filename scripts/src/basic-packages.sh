@@ -68,7 +68,7 @@ then
 	echo -e "${CYAN}Se instalaran los siguientes paquetes:\n${GREEN}${VAR}\n${DEFAULT}"
 	INSTALL=true
 else
-	echo -e "${GREEN}Ya tienes estos paquetes instalados.${DEFAULT}"
+	echo -e "${GREEN}Ya tienes estos paquetes instalados en tu sistema.${DEFAULT}\n\n"
 fi
 
 if [[ $INSTALL ]]
