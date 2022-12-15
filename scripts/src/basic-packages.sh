@@ -2,9 +2,10 @@
 
 packageNames=(
 	"apt-transport-https"
+	"apt-transport-https"
 	"ca-certificates"
-	"composer"
 	"cargo"
+	"composer"
 	"curl"
 	"default-jre"
 	"fd-find"
@@ -34,6 +35,11 @@ packageNames=(
 	"php8.1-sqlite3 "
 	"php8.1-zip"
 	"poppler-utils"
+	"python3"
+	"python3-all"
+	"python3-django"
+	"python3-pip"
+	"python3-venv"
 	"ripgrep"
 	"rust-all"
 	"screenfetch"
