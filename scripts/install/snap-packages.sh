@@ -1,18 +1,19 @@
 #!/bin/bash
 
 packageNames=(
-	"mysql-workbench-community"
 	"dbeaver-ce"
+	"firefox"
 	"insomnia"
+	"mysql-workbench-community"
 	"postman"
 )
 
 
 VAR=""
 PACKAGES=""
-echo -e "Verificando paquetes instalados:\n"
+echo -e "Verificando paquetes instalados en Snap:\n"
 for PACKAGE in ${packageNames[@]}; do
-	$PACKAGE --version &> /dev/null
+	sudo snap refresh $PACKAGE &> /dev/null
 
 	if [ $? -ne 0 ]
 	then
@@ -29,10 +30,10 @@ echo -e "\n"
 INSTALL=""
 if [[ $VAR ]]
 then
-	echo -e "${CYAN}Se instalaran los siguientes paquetes:\n${GREEN}${VAR}\n${DEFAULT}"
+	echo -e "${CYAN}Se instalaran los siguientes paquetes mediante snap:\n${GREEN}${VAR}\n${DEFAULT}"
 	INSTALL=true
 else
-	echo -e "${GREEN}Ya tienes estos paquetes instalados.${DEFAULT}"
+	echo -e "${GREEN}Ya tienes estos paquetes instalados por snap en tu sistema\n\n.${DEFAULT}"
 fi
 
 if [[ $INSTALL ]]
@@ -40,4 +41,5 @@ then
 	sudo snap install $PACKAGES
 fi
 
-echo -e "\n\n"
+echo -e "Actualizando el resto de paquetes de Snap:\n"
+sudo snap refresh --list &> /dev/null
