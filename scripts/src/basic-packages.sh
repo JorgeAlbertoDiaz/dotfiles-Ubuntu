@@ -44,6 +44,7 @@ packageNames=(
 	"rust-all"
 	"screenfetch"
 	"software-properties-common"
+	"speedtest-cli"
 	"stow"
 	"texlive-latex-extra"
 	"tmux"
