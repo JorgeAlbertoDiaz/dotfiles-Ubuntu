@@ -2,7 +2,6 @@
 
 packageNames=(
 	"apt-transport-https"
-	"apt-transport-https"
 	"ca-certificates"
 	"cargo"
 	"composer"
