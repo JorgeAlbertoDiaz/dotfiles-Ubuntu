@@ -39,6 +39,8 @@ fi
 if [[ $INSTALL ]]
 then
 	sudo snap install $PACKAGES
+  snap connect mysql-workbench-community:password-manager-service
+  snap connect mysql-workbench-community:ssh-keys
 fi
 
 echo -e "Actualizando el resto de paquetes de Snap:\n"
