@@ -14,6 +14,7 @@ packageNames=(
 	"git"
 	"gnupg"
 	"graphviz"
+	"kitty"
 	"libapache2-mod-php8.1"
 	"libmysqlclient-dev"
 	"libxext-dev"

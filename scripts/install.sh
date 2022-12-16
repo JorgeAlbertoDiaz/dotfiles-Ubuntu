@@ -19,5 +19,13 @@ else
 	printf "${RED}Decidiste cancelar la instalación de los paquetes de uso básicos...${DEFAULT}\n\n"
 fi
 
+printf "${CYAN}¿Agregar algun perfil de color a tu terminal?${DEFAULT} ${GREEN}s${DEFAULT}/${RED}n${DEFAULT}\nrespuesta: "
+read "response"
+
+if [ "$response" = "s" ] || [ "$response" = "S" ] || [ "$response" = "y" ] || [ "$response" = "Y" ]
+then
+	bash -c  "$(wget -qO- https://git.io/vQgMr)" 
+fi
+
 printf "\n\n${GREEN}Script finalizado${DEFAULT}\n\n"
 
