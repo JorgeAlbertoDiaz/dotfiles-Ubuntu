@@ -45,6 +45,7 @@ packageNames=(
 	"screenfetch"
 	"software-properties-common"
 	"stow"
+	"texlive-latex-extra"
 	"tmux"
 	"vim"
 	"wget"
