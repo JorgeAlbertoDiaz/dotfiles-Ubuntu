@@ -25,7 +25,7 @@ then
 	sudo apt update
 
 	printf ="\n\n${CYAN}Instala Docker Engine y Docker Compose${DEFAULT}\n"
-	sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+	sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose -y
 
 	printf ="\n\n${CYAN}Administrar docker como un usuario no root${DEFAULT}\n"
 	# sudo groupadd docker
